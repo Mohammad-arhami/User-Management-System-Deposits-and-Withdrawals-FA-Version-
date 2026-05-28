@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    font-family: 'Tahoma', 'Segoe UI', system-ui;
+}
+
+body {
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
