@@ -110,28 +110,52 @@
         </div>
     </div>
 
+
+
     <!-- all modalj (chart) (search) (transaction) -->
-    <div id="chartModal" class="chart-modal">
-        <div class="chart-modal-content">
-            <div class="chart-modal-header"><h3 id="chartModalTitle">📈 روند مالی</h3><span class="close-chart-modal">&times;</span></div>
-            <div class="chart-container"><canvas id="balanceChart"></canvas></div>
-        </div>
-    </div>
 
     <div id="searchModal" class="search-modal">
         <div class="search-modal-content">
-            <div class="search-modal-header"><h3>🔍 جستجوی کاربران</h3><span class="close-search-modal">&times;</span></div>
-            <div class="search-input-wrapper"><span class="search-icon">🔍</span><input type="text" id="searchInputModal" placeholder="جستجو بر اساس نام یا نام خانوادگی..."></div>
-            <div id="searchResults" class="search-results"><div class="empty-state">🔍 عبارت جستجو را وارد کنید</div></div>
+            <div class="search-modal-header">
+                <h3>🔍 جستجوی کاربران</h3>
+                <span class="close-search-modal">&times;</span>
+            </div>
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInputModal" placeholder="جستجو بر اساس نام یا نام خانوادگی...">
+            </div>
+            <div id="searchResults" class="search-results">
+                <div class="empty-state"> عبارت جستجو را وارد کنید</div>
+            </div>
         </div>
     </div>
 
+
+    <div id="chartModal" class="chart-modal">
+        <div class="chart-modal-content">
+            <div class="chart-modal-header">
+                <h3 id="chartModalTitle">📈 روند مالی</h3>
+                <span class="close-chart-modal">&times;</span>
+            </div>
+            <div class="chart-container">
+                <canvas id="balanceChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+
     <div id="transactionModal" class="modal">
         <div class="modal-content">
-            <div class="modal-header"><h3 id="modalTitle">📋 تراکنش‌ها</h3><span class="close-modal">&times;</span></div>
+            <div class="modal-header">
+                <h3 id="modalTitle">📋 تراکنش‌ها</h3>
+                <span class="close-modal">&times;</span>
+            </div>
             <div id="transactionsList"></div>
-            <div id="categoryStats" class="category-stats" style="display:none"><h4>📊 آمار دسته‌بندی</h4><div id="categoryStatsGrid" class="category-stats-grid"></div></div>
-            <button id="clearUserTransactionsBtn" style="background:#ed8936;width:100%;margin-top:15px">🗑 پاک کردن تمام تراکنش‌ها</button>
+            <div id="categoryStats" class="category-stats" style="display:none">
+                <h4>📊 آمار دسته‌بندی</h4>
+                <div id="categoryStatsGrid" class="category-stats-grid"></div>
+            </div>
+            <button id="clearUserTransactionsBtn" style="background:#e53e3e;width:100%;margin-top:15px">🗑 پاک کردن تمام تراکنش‌ها</button>
         </div>
     </div>   
 
