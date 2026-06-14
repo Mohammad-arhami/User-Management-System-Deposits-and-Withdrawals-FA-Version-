@@ -25,21 +25,21 @@
 }
 
 body.dark-mode {
-  --bg-gradient-start: #1a1a2e;
-  --bg-gradient-end: #16213e;
-  --container-bg: #1e1e2e;
+  --bg-gradient-start: #18182c;
+  --bg-gradient-end: #0c1429;
+  --container-bg: #161622;
   --text-primary: #ffffff;
   --text-secondary: #cbd5e0;
-  --card-bg: #2d2d3a;
-  --border-color: #717188;
+  --card-bg: #161627; 
+  --border-color: #6c6c8b;
   --input-border: #3d3d4a;
   --input-focus: #667eea;
   --button-gradient-start: #4c51bf;
   --button-gradient-end: #5b3b8c;
-  --modal-bg: #2d2d3a;
+  --modal-bg: #1d1d2c;
   --modal-overlay: rgba(0, 0, 0, 0.7);
   --login-bg: #2d2d3a;
-  --box-shadow-color: #555555;
+  --box-shadow-color: #2b2b2e;
 }
 
 body {
@@ -185,6 +185,7 @@ h1 {
   background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
   color: white;
   padding: 20px;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   text-align: center;
 }
@@ -210,6 +211,7 @@ h1 {
   border-radius: 16px;
   margin: 50px 0;
   margin-top: 80px;
+  border: 1px solid var(--border-color);
   box-shadow: 0px 0px 12px var(--box-shadow-color);
   
 }
