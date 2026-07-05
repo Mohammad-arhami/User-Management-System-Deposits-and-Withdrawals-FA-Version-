@@ -101,7 +101,6 @@ function lockScreen() {
     document.getElementById('loginOverlay').style.display = 'flex';
     document.getElementById('mainApp').style.display = 'none';
     document.getElementById('passwordInput').value = '';
-    document.getElementById('loginError').textContent = '';
 
     // fucus on password input after click on lock screen
     passwordInput.focus();
@@ -121,7 +120,7 @@ function unlockScreen(password) {
         document.getElementById('loginOverlay').style.display = 'none';
         document.getElementById('mainApp').style.display = 'block';
         document.getElementById('passwordInput').value = '';
-        document.getElementById('loginError').textContent = '';
+
         // Start auto-lock timer if If the user does nothing in 5 minutes, the page will be locked again
         startLockTimer();
         return true;
@@ -629,7 +628,7 @@ function showChart(user) {
     
     // Show Chart Modal
     document.getElementById('chartModalTitle').innerHTML = `📈 روند مالی ${escapeHtml(user.firstName)} ${escapeHtml(user.lastName)}`;
-    charModal.style.display = 'flex';
+    chartModal.style.display = 'flex';
 
     // Detect Theme
     const isDark = document.body.classList.contains('dark-mode');
