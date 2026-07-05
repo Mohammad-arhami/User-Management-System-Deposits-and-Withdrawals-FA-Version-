@@ -1120,7 +1120,7 @@ events.forEach(ev => document.addEventListener(ev, resetLockTimer));
 loginBtn.addEventListener("click" , () => unlockScreen(passwordInput.value) ? resetLockTimer() : false );
 passwordInput.addEventListener("keypress" , (e) => { if(e.key === 'Enter') loginBtn.click()});
 lockScreenBtn.addEventListener("click" , lockScreen);
-changePasswordBtn.addEventListener("clck" , changePassword);
+changePasswordBtn.addEventListener("click" , changePassword);
 searchModalBtn.addEventListener("click", openSearchModal);
 clearUserTransactionsBtn.addEventListener("click" , () => currentSelectedUser ? clearUserTransactions(currentSelectedUser.id) : false);
 saveBackupBtn.addEventListener("click" , backupData);
